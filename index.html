@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>webpage</title>
+    <style>
+    body
+    {
+      height:100vh;
+      width: 100%;
+      background: linear-gradient(45deg,lime,aqua,lawngreen,violet,hotpink,gold,pink);
+      background-size: 300% 300%;
+      animation: gradient 12s ease-in-out infinite;
+    }
+    @keyframes gradient {
+         0% {
+              background-position: 0 50%;
+         }
+         50% {
+              background-position: 100% 50%;
+         }
+         100% {
+               background-position: 0 50%;
+         }
+    }
+    
+    h1
+    {
+       text-align: center;
+       font-size: 60px;
+       font-family: Lato;
+       background: linear-gradient(180deg,indigo,blue,seagreen,darkslategray,crimson,maroon,coral);
+       background-size: 400px;
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+     } 
+     h2
+     {
+       text-align: center;
+       font-size: 60px;
+       font-family: Lato;
+       background: linear-gradient(180deg,chocolate,blue,darkorchid,forestgreen,darkgreen,indigo,orchid,purple);
+       background-size: 400px;
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+      }
+    select
+    {
+       position: absolute;
+       align: center;
+       display: block;
+       margin: 0 auto;
+       align-items: center;
+       top: 50%;
+       left: 50%;
+       width: 220px;
+       height:50px;
+       padding: 8px;
+       border: none;
+       outline: none;
+       fontsize: 20px;
+       font-family: verdana;
+       border-right: 15px solid #fff;
+     }
+     
+  </style>
+</head>
+<body>
+     
+</br> </br>
+<h1> Hi there!</h1>
+
+<h2>Want to watch something !!!!!</h2>
+
+<select name= "links" onchange= "window.location.href= this.value;">
+   <option>Genre you prefering now </option>
+   <option value= "https://www.yidio.com/movies/action">Action</option>
+   <option value= "https://www.yidio.com/movies/horror">Horror</option>
+   <option value= "https://www.yidio.com/movies/romance">Love</option>
+   <option value= "https://www.yidio.com/movies/mystery">Mystery</option>
+   <option value= "https://www.yidio.com/movies/fantasy">Fantasy</option>
+   <option value= "https://www.yidio.com/movies/comedy">Comedy</option>
+</select>
+    
+ </body>
+</html
